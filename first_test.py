@@ -106,8 +106,11 @@ class BMW(Car):
 if __name__ == '__main__':
 
     cars = "Which car would you like? A [N]ormal car, a [M]ini, a [B]MW or a [T]esla?"
-    car_input = input(cars).upper()
     car_options = "BNMT"
+    car_input = ""
+
+    while car_input not in car_options or len(car_input) != 1:
+        car_input = input(cars).upper()
 
     if car_input == "N":
         my_car = Car()
@@ -117,9 +120,6 @@ if __name__ == '__main__':
         my_car = Tesla()
     elif car_input == "B":
         my_car = BMW()
-    else:
-        print("I don't know how to do that.")
-        exit()
 
     print(f"I am a {my_car.name}!")
 
