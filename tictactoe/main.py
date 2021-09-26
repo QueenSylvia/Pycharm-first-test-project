@@ -21,6 +21,7 @@ def display_board():
     for x in range(1, 10):
         if moves[x] != "":
             board = board.replace(str(x), moves[x])
+# "board =" is for saving the copy to display the most recently changed board
 
     print(board)
 
