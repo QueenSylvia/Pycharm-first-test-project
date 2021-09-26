@@ -8,7 +8,7 @@ board = """
 
 print(board)
 moves = ["", "", "", "", "", "", "", "", "", ""]
-#index   0    1  2   3    4  5   6   7   8   9
+# index  0    1  2   3    4  5   6   7   8   9
 # [""]*9
 
 
@@ -66,8 +66,6 @@ while icon_input not in icon_options or len(icon_input) != 1:
     elif icon_input == "O":
         print("")
 # Next, array. Get array done by next sunday.
-
-
 
 
 def game_init():
