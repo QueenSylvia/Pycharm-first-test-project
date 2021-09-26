@@ -1,13 +1,31 @@
 board = """
-    7 |  8 | 9
+    7 |  8 |  9
   ----+----+----
     4 |  5 |  6
   ----+----+----
     1 |  2 |  3
-    
 """
 
 print(board)
+moves = ["", "", "", "", "", "", "", "", "", ""]
+#index   0    1  2   3    4  5   6   7   8   9
+# [""]*9
+
+
+def display_board():
+    global board
+    # global = something that is not in the section/ whole code.
+
+    # print out the board
+    # reflect moves array to the board
+    for x in range(1, 10):
+        if moves[x] != "":
+            board = board.replace(str(x), moves[x])
+
+    print(board)
+
+
+display_board()
 
 print("Time to play Tic Tac Toe!")
 # Add a player vs player version as well.
@@ -49,14 +67,6 @@ while icon_input not in icon_options or len(icon_input) != 1:
 # Next, array. Get array done by next sunday.
 
 
-def display_board():
-    # print out the board
-    print("    |    |   "
-          "----+----+---"
-          "    |    |   "
-          "----|----|---"
-          "    |    |   "
-          "             ")
 
 
 def game_init():
