@@ -47,6 +47,7 @@ while icon_input not in icon_options or len(icon_input) != 1:
 
     elif icon_input == "O":
         print("")
+# Next, array. Get array done by next sunday.
 
 
 def display_board():
