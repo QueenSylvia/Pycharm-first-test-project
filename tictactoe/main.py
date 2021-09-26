@@ -1,10 +1,10 @@
 board = """
-3      |    |  
-   ----+----+----
-2      |    |   
-   ----+----+----
-1      |    |   
-    1    2    3
+    7 |  8 | 9
+  ----+----+----
+    4 |  5 |  6
+  ----+----+----
+    1 |  2 |  3
+    
 """
 
 print(board)
@@ -23,11 +23,10 @@ while rules_input not in rules_options or len(rules_input) != 1:
         print("The rules of tic tac toe are that you have to get three in a row and stop the other player from doing "
               "so before you do. The first one to do it wins. If no one gets 3 in a row then it becomes a tie/draw. "
               "You will also need to choose a icon/ X and O. You will have alternating(swapping) turns. You cannot "
-              "place in a spot that has already been taken. You can't pass a turn or change icons (X or O). "
-              " For this game, we use coordinates. The x axis goes first (bottom number). so 2,3 would be the"
-              " top middle spot, and 3,2 would be the middle right spot.                                              "
+              "place in a spot that has already been taken by a X or O. You can't pass a turn or change icons (X or O)." 
+              "Press the number on you keyboard of the place you want your icon to take for example, 5.               "
               "                                                                                                       ")
-# Press [D] when done to continue. Add later to make it easier and get rid of spaces at the end
+# "Press [D] when done to continue." Add later to make it easier and get rid of spaces at the end.
 
     elif rules_input == "N":
         pass
