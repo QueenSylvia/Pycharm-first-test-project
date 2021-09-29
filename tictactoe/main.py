@@ -50,23 +50,6 @@ while rules_input not in rules_options or len(rules_input) != 1:
     elif rules_input == "N":
         pass
 
-print("Choose your icon, X or O, X goes first. Choose X if you want to go first,"
-      "but choose O if you want to go second.")
-
-icons = "Would you like [X] or [O]?"
-icon_options = "XO"
-icon_input = ""
-
-while icon_input not in icon_options or len(icon_input) != 1:
-    icon_input = input(icons).upper()
-
-    if icon_input == "X":
-        print("")
-
-    elif icon_input == "O":
-        print("")
-# Next, array. Get array done by next sunday.
-
 
 def game_init():
     # initialise the game board
